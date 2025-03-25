@@ -1,0 +1,98 @@
+.franchise {
+    width: 100%;
+    height: auto;
+
+    position: relative;
+    &__line {
+        width: 100%;
+        padding: 40px 40px;
+    }
+    .line_top {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #d60000;
+        position: absolute;
+        top: 250px;
+        @media (max-width: 1873px) {
+            display: none;
+        }
+    }
+    .line_bottom {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #d60000;
+        position: absolute;
+        top: 484px;
+        @media (max-width: 1873px) {
+            display: none;
+        }
+    }
+    &__title {
+        margin-bottom: 40px;
+        font-family: "Bebas Neue Book" sans-serif;
+        font-size: 42px;
+        font-weight: 700;
+        color: white;
+        text-transform: uppercase;
+        line-height: normal;
+        letter-spacing: normal;
+        @media (max-width: 375px) {
+           font-size: 32px;
+        }
+    }
+    &__wrapper {
+    }
+    &__cards {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 60px;
+        @media (max-width: 1873px) {
+            justify-content: center;
+            column-gap: 20px;
+        }
+    }
+    &__card {
+        width: 100%;
+        max-width: 592px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 30px;
+            img {
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            svg {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        &-txt {
+            max-width: 300px;
+            text-align: center;
+            font-family: "Bebas Neue Book" sans-serif;
+            font-weight: 500;
+            font-size: 35px;
+            line-height: normal;
+            text-transform: uppercase;
+            color: white;
+            @media (max-width: 375px) {
+                font-size: 30px;
+             }
+        }
+
+        @media (max-width: 1873px) {
+            padding: 5px;
+            border: 2px solid #d60000;
+            border-radius: 20px;
+        }
+    }
+}

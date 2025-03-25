@@ -1,0 +1,145 @@
+.restaurant {
+    width: 100%;
+    height: auto;
+    padding: 20px 40px;
+    &__title {
+        margin-bottom: 40px;
+        font-family: "Bebas Neue Book" sans-serif;
+        font-size: 42px;
+        font-weight: 700;
+        color: white;
+        text-transform: uppercase;
+        line-height: normal;
+        letter-spacing: normal;
+        @media (max-width: 375px) {
+            font-size: 32px;
+        }
+    }
+
+    &__wrapper {
+        width: 100%;
+        /* border: 1px solid yellow; */
+        padding: 20px;
+    }
+
+    &__cards {
+        max-width: 1540px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 60px;
+        margin: 0 auto;
+    }
+    &__card {
+        width: 370px;
+        height: 200px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        position: relative;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 335px;
+            height: 2px;
+            background-color: #d60000;
+            position: absolute;
+            right: -165px;
+            top: 30px;
+        }
+        @media (min-width: 1615px) {
+            &:nth-child(4) {
+                &:after {
+                    display: none;
+                }
+            }
+            &:nth-child(8) {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+
+        @media (max-width: 1615px) {
+            &:nth-child(3) {
+                &:after {
+                    display: none;
+                }
+            }
+            &:nth-child(4) {
+                &:after {
+                    display: block;
+                }
+            }
+            &:nth-child(6) {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+        @media (max-width: 1245px) {
+            &:nth-child(2) {
+                &:after {
+                    display: none;
+                }
+            }
+            &:nth-child(3) {
+                &:after {
+                    display: block;
+                }
+            }
+            &:nth-child(4) {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+        @media (max-width: 875px) {
+            border: 1px solid red;
+            padding: 5px;
+            border-radius: 20px;
+            &:after {
+                display: block !important;
+                width: 64px;
+                top: 229px;
+                left: 41%;
+                transform: rotate(90deg);
+            }
+        }
+        &:nth-child(8) {
+            &:after {
+                display: none !important;
+            }
+        }
+        &_circle {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #d60000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-family: "Bebas Neue Book" sans-serif;
+            font-size: 60px;
+            font-weight: 600;
+            line-height: normal;
+            color: white;
+        }
+        &_txt {
+            width: 208px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: uppercase;
+            font-size: 20px;
+            color: white;
+            @media (max-width: 875px) {
+                text-align: center;
+            }
+        }
+    }
+}

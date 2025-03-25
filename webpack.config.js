@@ -110,10 +110,10 @@ module.exports = [
             new CopyWebpackPlugin({
                 patterns: [
                     { from: "src/fonts", to: "fonts" },
-                    /* { from: "src/icons", to: "icons" }, */
+                    { from: "src/icons", to: "icons" },
                     { from: "src/images", to: "images" },
                     { from: "src/css", to: "css" },
-                   /*  { from: "src", to: "formhandler.php" },
+                    /*  { from: "src", to: "formhandler.php" },
                     { from: "vendor", to: "vendor" }, */
                 ],
             }),
@@ -152,7 +152,7 @@ module.exports = [
                         ],
                     },
                 }),
-                new TerserPlugin(),
+                /*  new TerserPlugin(), */
             ],
         },
     },
@@ -295,7 +295,7 @@ module.exports = [
                         ],
                     },
                 }),
-                new TerserPlugin(),
+                /*   new TerserPlugin(), */
             ],
         },
     },
