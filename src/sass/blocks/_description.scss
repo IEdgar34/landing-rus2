@@ -1,0 +1,32 @@
+.description {
+    width: 100%;
+    height: auto;
+    padding: 40px 20px 60px 20px;
+    background-color: black;
+    position: relative;
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 20px;
+        background-color: #980505;
+    }
+    p {
+        margin-left: 40px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        color: white;
+    
+        word-wrap: break-word;
+        span {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            font-size: 26px;
+            text-transform: uppercase;
+        }
+    }
+}

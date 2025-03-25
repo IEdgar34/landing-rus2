@@ -1,0 +1,91 @@
+.subdescr {
+    width: 100%;
+    height: auto;
+    padding: 40px 20px 100px 20px;
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__cards {
+        max-width: 90%;
+        width: 1170px;
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        @media (min-width: 722px) and (max-width: 1054px) {
+            justify-content: center;
+        }
+    }
+    &__card {
+        /*  */
+        width: auto;
+        height: auto;
+        min-height: 170px;
+        flex: 0 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 50px;
+        text-align: right;
+        @media (max-width: 1352px) {
+            width: 100%;
+            max-width: 300px;
+            border-left: 2px solid red;
+        }
+        
+    }
+    &__card_title {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: white;
+        @media (max-width: 1054px) {
+            font-size: 18px;
+        }
+    }
+    &__card_body {
+        height: auto;
+        &-pref {
+            margin-right: 15px;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 700;
+            font-size: 60px;
+            color: white;
+            @media (max-width: 1054px) {
+                font-size: 56px;
+            }
+        }
+        &-cont {
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 700;
+            font-size: 120px;
+            color: white;
+            line-height: 100px;
+            @media (max-width: 1054px) {
+                font-size: 116px;
+            }
+        }
+        &-val {
+            font-family: "Montserrat";
+            font-style: italic;
+            font-weight: 600;
+            font-size: 18px;
+            color: white;
+        }
+    }
+    .mx-w-smol {
+        max-width: 200px;
+    }
+    .tac {
+        text-align: left;
+        @media (max-width: 1054px) {
+            text-align: right;
+        }
+    }
+    .border {
+        border-left: 2px solid red;
+    }
+}
