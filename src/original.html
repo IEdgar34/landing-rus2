@@ -564,6 +564,13 @@
                 -moz-box-shadow: inset 60px 1px 47px 28px rgba(0, 0, 0, 1);
                 box-shadow: inset 60px 1px 47px 28px rgba(0, 0, 0, 1);
             }
+            @media(max-width: 860px){
+                .about{
+                    background-position: top right;
+                    background-size: contain;
+                }
+               
+            }
             .about__title {
                 font-family: "Bebas Neue Book" ,sans-serif;
                 font-weight: 700;
@@ -947,9 +954,9 @@
                             <div class="contacts__form">
                                 <p class="contacts__form__title">Для получения дополнительной информации или вопросов, пожалуйст,напишите нам</p>
                                 <form action="#" class="form">
-                                    <input class="form__input-name" name="name" placeholder="введите имя" id="name" type="text" />
-                                    <input class="form__input-name" name="phone" placeholder="номер телефона" id="phone" type="text" />
-                                    <textarea class="form__input-textare" name="textarea" placeholder="введите вопрос" id="textarea"></textarea>
+                                    <input class="form__input-name" name="name" placeholder="Введите имя" id="name" type="text" />
+                                    <input class="form__input-name" name="phone" placeholder="Номер телефона" id="phone" type="text" />
+                                    <textarea class="form__input-textare" name="textarea" placeholder="Введите вопрос" id="textarea"></textarea>
                                 </form>
                                 <button id="form" type="submit">отправить вопрос</button>
                             </div>
@@ -990,7 +997,7 @@
                             <img src="images/logo.png" alt="logo" loading="lazy" />
                         </a>
                     </div>
-                    <ul class="footer__menu">
+                    <ul class="footer__menu right">
                         <li class="footer__menu_item"><a href="#" class="footer__menu_link">как открыть ресторан</a></li>
                         <li class="footer__menu_item"><a href="#" class="footer__menu_link">контакты</a></li>
                     </ul>

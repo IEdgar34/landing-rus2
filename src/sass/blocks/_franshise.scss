@@ -13,7 +13,7 @@
         height: 2px;
         background-color: #d60000;
         position: absolute;
-        top: 250px;
+        top: 243px;
         @media (max-width: 1873px) {
             display: none;
         }
@@ -24,7 +24,7 @@
         height: 2px;
         background-color: #d60000;
         position: absolute;
-        top: 484px;
+        top: 473px;
         @media (max-width: 1873px) {
             display: none;
         }
@@ -42,8 +42,8 @@
            font-size: 32px;
         }
     }
-    &__wrapper {
-    }
+   /*  &__wrapper {
+    } */
     &__cards {
         width: 100%;
         display: flex;

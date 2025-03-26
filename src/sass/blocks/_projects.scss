@@ -7,7 +7,7 @@
         font-weight: 600;
         text-transform: uppercase;
         color: white;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         text-align: center;
         @media (max-width: 1000px) {
             font-size: 70px;
@@ -21,10 +21,10 @@
         height: 600px;
         display: flex;
         gap: 20px;
-        @media(max-width: 768px){
+        @media (max-width: 768px) {
             height: 400px;
         }
-        @media(max-width: 650px){
+        @media (max-width: 650px) {
             flex-direction: column;
             height: auto;
         }
@@ -37,16 +37,17 @@
         &_txt {
             height: 80px;
             position: relative;
-            font-family: "Bebas Neue Book", sans-serif;
-            font-weight: 500;
-            font-size: 26px;
-            line-height: normal;
-            color: white;
             text-transform: uppercase;
             display: flex;
             align-items: center;
             gap: 80px;
-
+            p {
+                font-family: "Bebas Neue Book", sans-serif;
+                font-weight: 600;
+                font-size: 30px;
+                line-height: normal;
+                color: white;
+            }
             .decor {
                 width: 40px;
                 height: 80px;
@@ -58,9 +59,9 @@
                     order: 2;
                 }
             }
-            @media(max-width: 768px){
-               font-size: 20px;
-               gap: 20px;
+            @media (max-width: 768px) {
+                font-size: 20px;
+                gap: 20px;
             }
         }
         &_img {
@@ -73,8 +74,8 @@
                 object-fit: cover;
             }
         }
-        @media(max-width: 650px){
-           width: 100%;
+        @media (max-width: 650px) {
+            width: 100%;
         }
     }
 }
