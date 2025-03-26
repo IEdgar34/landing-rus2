@@ -17,8 +17,12 @@
         text-transform: uppercase;
         line-height: normal;
         letter-spacing: normal;
+        padding-left: 170px;
         @media (max-width: 375px) {
             font-size: 32px;
+        }
+        @media (max-width: 770px) {
+          padding-left: 0;
         }
     }
 
