@@ -1,7 +1,13 @@
 .restaurant {
     width: 100%;
     height: auto;
-    padding: 20px 40px;
+    padding: 20px 100px;
+    @media (max-width: 1400px) {
+        padding: 20px 50px;
+    }
+    @media (max-width: 930px) {
+        padding: 20px 20px;
+    }
     &__title {
         margin-bottom: 40px;
         font-family: "Bebas Neue Book" sans-serif;
@@ -39,6 +45,13 @@
         align-items: center;
         gap: 20px;
         position: relative;
+        @media (max-width: 1735px) {
+            width: 300px;
+        }
+        @media (max-width: 1455px) {
+            width: 280px;
+        }
+        
 
         &:after {
             content: "";
@@ -49,8 +62,23 @@
             position: absolute;
             right: -165px;
             top: 30px;
+            @media (max-width: 1736px) {
+                width: 280px;
+                
+            }
         }
-        @media (min-width: 1615px) {
+        &:nth-child(4) {
+            &:after {
+                display: none;
+            }
+        }
+        &:nth-child(8) {
+            &:after {
+                display: none;
+            }
+        }
+
+        /*  @media (min-width: 1615px) {
             &:nth-child(4) {
                 &:after {
                     display: none;
@@ -61,9 +89,9 @@
                     display: none;
                 }
             }
-        }
+        } */
 
-        @media (max-width: 1615px) {
+         @media (max-width: 1274px) {
             &:nth-child(3) {
                 &:after {
                     display: none;
@@ -80,7 +108,24 @@
                 }
             }
         }
-        @media (max-width: 1245px) {
+        @media (max-width: 995px) {
+            &:nth-child(2) {
+                &:after {
+                    display: block;
+                }
+            }
+            &:nth-child(3) {
+                &:after {
+                    display: none;
+                }
+            }
+            &:nth-child(4) {
+                &:after {
+                    display: block;
+                }
+            }
+        }
+        @media (max-width: 994px) {
             &:nth-child(2) {
                 &:after {
                     display: none;
@@ -98,6 +143,7 @@
             }
         }
         @media (max-width: 875px) {
+            width: 391px;
             border: 1px solid red;
             padding: 5px;
             border-radius: 20px;
@@ -115,19 +161,27 @@
             }
         }
         &_circle {
+            position: relative;
             width: 70px;
             height: 70px;
             border-radius: 50%;
             background-color: #d60000;
-            display: flex;
+          /*   display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: center; */
 
             font-family: "Bebas Neue Book" sans-serif;
             font-size: 60px;
             font-weight: 600;
             line-height: normal;
             color: white;
+            p{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+            }
         }
         &_txt {
             width: 208px;

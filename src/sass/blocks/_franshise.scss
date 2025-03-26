@@ -5,7 +5,13 @@
     position: relative;
     &__line {
         width: 100%;
-        padding: 40px 40px;
+        padding: 40px 100px;
+        @media (max-width: 1400px) {
+            padding: 40px 50px;
+        }
+        @media (max-width: 930px) {
+            padding: 40px 20px;
+        }
     }
     .line_top {
         display: block;
@@ -13,8 +19,8 @@
         height: 2px;
         background-color: #d60000;
         position: absolute;
-        top: 243px;
-        @media (max-width: 1873px) {
+        top: 227px;
+        @media (max-width: 1400px) {
             display: none;
         }
     }
@@ -24,8 +30,8 @@
         height: 2px;
         background-color: #d60000;
         position: absolute;
-        top: 473px;
-        @media (max-width: 1873px) {
+        top: 435px;
+        @media (max-width: 1400px) {
             display: none;
         }
     }
@@ -39,36 +45,41 @@
         line-height: normal;
         letter-spacing: normal;
         @media (max-width: 375px) {
-           font-size: 32px;
+            font-size: 32px;
         }
     }
-   /*  &__wrapper {
+    /*  &__wrapper {
     } */
     &__cards {
         width: 100%;
+        max-width: 1800px;
         display: flex;
         flex-wrap: wrap;
         row-gap: 60px;
+        margin: 0 auto;
         @media (max-width: 1873px) {
             justify-content: center;
             column-gap: 20px;
         }
     }
     &__card {
+        /* width: 33.3%; */
         width: 100%;
-        max-width: 592px;
+        max-width: 33.3%;
+        /* max-width: 592px; */
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 40px;
         &-img {
-            width: 100px;
-            height: 100px;
-            margin-bottom: 30px;
+            width: 70px;
+            height: 70px;
+            /* margin-bottom: 30px; */
             img {
                 display: block;
                 width: 100%;
                 height: 100%;
-               /*  object-fit: cover; */
+                /*  object-fit: cover; */
             }
             svg {
                 width: 100%;
@@ -86,10 +97,14 @@
             color: white;
             @media (max-width: 375px) {
                 font-size: 30px;
-             }
+            }
         }
-
-        @media (max-width: 1873px) {
+        @media (max-width: 1874px) {
+            max-width: 25%;
+        }
+        @media (max-width: 1400px) {
+            width: 100%;
+            max-width: 592px;
             padding: 5px;
             border: 2px solid #d60000;
             border-radius: 20px;
