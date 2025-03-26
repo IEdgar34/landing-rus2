@@ -102,7 +102,7 @@ module.exports = [
                     { path: "main.bundle.js", attributes: { defer: true } },
                     { path: "index.bundle.js", attributes: { defer: true } },
                 ],
-                tags: [{ path: "styles.css", /* attributes: { media: "print", onload: "this.onload=null;this.media='all'" } */ }],
+                tags: [{ path: "styles.css" /* attributes: { media: "print", onload: "this.onload=null;this.media='all'" } */ }],
                 useHash: true,
                 append: false, // Вставляет перед другими скриптами
             }),
@@ -113,8 +113,8 @@ module.exports = [
                     { from: "src/icons", to: "icons" },
                     { from: "src/images", to: "images" },
                     { from: "src/css", to: "css" },
-                    /*  { from: "src", to: "formhandler.php" },
-                    { from: "vendor", to: "vendor" }, */
+                    /*  { from: "src", to: "formhandler.php" }, */
+                    { from: "src/favicon", to: "favicon" },
                 ],
             }),
             /* new CompressionPlugin({
