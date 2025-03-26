@@ -102,7 +102,7 @@ module.exports = [
                     { path: "main.bundle.js", attributes: { defer: true } },
                     { path: "index.bundle.js", attributes: { defer: true } },
                 ],
-                tags: [{ path: "styles.css", attributes: { media: "print", onload: "this.onload=null;this.media='all'" } }],
+                tags: [{ path: "styles.css", /* attributes: { media: "print", onload: "this.onload=null;this.media='all'" } */ }],
                 useHash: true,
                 append: false, // Вставляет перед другими скриптами
             }),
