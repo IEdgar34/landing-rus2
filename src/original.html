@@ -4,16 +4,664 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Sample" />
-        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="preload" as="image" href="images/banner-bg-1.webp" type="image/webp" fetchpriority="high" />
+        <link rel="preload" as="image" href="images/main-bg.webp" type="image/webp" fetchpriority="high" />
+        <link rel="stylesheet" href="css/fonts.css" media="print" onload="this.onload=null;this.media='all'" />
         <title>Мясной | Жарим по Любви</title>
         <style>
-            @font-face{font-family:"Bebas Neue";src:local("Bebas Neue Bold"),local("BebasNeueBold"),url("../fonts/BebasNeueBold.woff2") format("woff2"),url("../fonts/BebasNeueBold.woff") format("woff"),url("../fonts/BebasNeueBold.ttf") format("truetype");font-weight:700;font-style:normal}@font-face{font-family:"Bebas Neue Book";src:local("Bebas Neue Book"),local("BebasNeueBook"),url("../fonts/BebasNeueBook.woff2") format("woff2"),url("../fonts/BebasNeueBook.woff") format("woff"),url("../fonts/BebasNeueBook.ttf") format("truetype");font-weight:400;font-style:normal}@font-face{font-family:Montserrat;src:local("Montserrat Medium"),local("Montserrat-Medium"),url("../fonts/Montserrat-Medium.woff2") format("woff2"),url("../fonts/Montserrat-Medium.woff") format("woff"),url("../fonts/Montserrat-Medium.ttf") format("truetype");font-weight:500;font-style:normal}@font-face{font-family:Montserrat;src:local("Montserrat SemiBold Italic"),local("Montserrat-SemiBoldItalic"),url("../fonts/Montserrat-SemiBoldItalic.woff2") format("woff2"),url("../fonts/Montserrat-SemiBoldItalic.woff") format("woff"),url("../fonts/Montserrat-SemiBoldItalic.ttf") format("truetype");font-weight:600;font-style:italic}@font-face{font-family:Montserrat;src:local("Montserrat Bold"),local("Montserrat-Bold"),url("../fonts/Montserrat-Bold.woff2") format("woff2"),url("../fonts/Montserrat-Bold.woff") format("woff"),url("../fonts/Montserrat-Bold.ttf") format("truetype");font-weight:700;font-style:normal}@font-face{font-family:"Bebas Neue";src:local("Bebas Neue Regular"),local("BebasNeueRegular"),url("../fonts/BebasNeueRegular.woff2") format("woff2"),url("../fonts/BebasNeueRegular.woff") format("woff"),url("../fonts/BebasNeueRegular.ttf") format("truetype");font-weight:400;font-style:normal}@font-face{font-family:Montserrat;src:local("Montserrat Black"),local("Montserrat-Black"),url("../fonts/Montserrat-Black.woff2") format("woff2"),url("../fonts/Montserrat-Black.woff") format("woff"),url("../fonts/Montserrat-Black.ttf") format("truetype");font-weight:900;font-style:normal}@font-face{font-family:Montserrat;src:local("Montserrat SemiBold"),local("Montserrat-SemiBold"),url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),url("../fonts/Montserrat-SemiBold.woff") format("woff"),url("../fonts/Montserrat-SemiBold.ttf") format("truetype");font-weight:600;font-style:normal}*{margin:0px;padding:0px;box-sizing:border-box}a{text-decoration:none}ul{list-style-type:none}body,html{height:100%}:root{--primary-50: #ff3e79;--primary-100: #efcde9;--primary-200: #e3a8d9;--primary-300: #d782c8;--primary-400: #ca5bb8;--primary-500: #be35a7;--primary-600: #982a86;--primary-700: #722064;--primary-800: #4c1543;--primary-900: #260b21}.header{width:100%;height:60px;position:absolute;top:0px;padding:0px 20px;z-index:100}.header__wrapper{display:flex;-webkit-box-pack:end;justify-content:end}.logo{display:block;position:absolute;top:30px;left:30px}.logo img{width:100%;height:100%;object-fit:cover}@media (max-width:1200px){.logo{width:150px}}@media (max-width:550px){.logo{width:100px}}.burger{display:none;width:36px;height:23px;margin-top:30px;position:relative;z-index:10001}.burger span{width:100%;height:2px;background-color:rgb(255,255,255)}@media (max-width:830px){.burger{display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-pack:justify;justify-content:space-between}}.nav{margin-top:30px}@media (max-width:830px){.nav{transform:translate(-100%);width:100%;height:max-content;position:fixed;left:0px;top:0px;margin-top:0px;background-color:rgb(66,9,9)}}.nav__menu{display:flex}.nav__menu{gap:200px}.nav__menu_item{width:max-content;background:linear-gradient(90deg,rgb(255,255,255) 50%,red 0px) 0% 0% / 200% 100%;color:transparent;position:relative;z-index:20}.nav__menu_item,.nav__menu_item:hover{background-clip:text}.nav__menu_item:hover{background-position:-100% 0px}.nav__menu_link{display:block;width:max-content;font-family:Montserrat,sans-serif;font-size:20px;font-weight:600;text-transform:uppercase;color:transparent}@media (max-width:1200px){.nav__menu_link{font-size:16px}}@media (max-width:1450px){.nav__menu{gap:100px}}@media (max-width:1200px){.nav__menu{gap:50px}}@media (max-width:830px){.nav__menu{width:100%;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;padding-bottom:20px;padding-top:20px}}.main{position:relative;width:100%;height:100vh;background-image:url("images/banner-bg-min.webp");background-repeat:no-repeat;background-position:50% center;background-size:cover;object-fit:contain}@media (max-width:830px){.main{height:589px}}.main__content{position:absolute;bottom:40px;left:20px}.main__content h1{font-family:"Bebas Neue",sans-serif;color:rgb(255,255,255);font-size:75px;font-weight:700;text-transform:uppercase;padding-bottom:40px}@media (max-width:1200px){.main__content h1{font-size:60px;padding-bottom:30px}}@media (max-width:750px){.main__content h1{font-size:40px;padding-bottom:10px}}.main__content_btn{display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;background-color:rgb(152,5,5);border:none;border-radius:50px;width:350px;height:50px;color:rgb(255,255,255);font-size:20px;font-weight:700;font-family:Montserrat,sans-serif;text-transform:uppercase}@media (max-width:520px){.main__content_btn{font-size:16px;width:250px}}.about{width:100%;min-height:900px;padding:40px 20px 60px;background-image:url("images/about-bg-min.webp");background-repeat:no-repeat;background-position:100% 0px;background-size:contain;object-fit:contain;background-color:rgb(0,0,0);box-shadow:rgb(0,0,0) 60px 1px 47px 28px inset}.about__title{font-family:"Bebas Neue Book",sans-serif;font-weight:700;font-size:42px;color:rgb(255,255,255);text-transform:uppercase;margin-bottom:60px}@media (max-width:725px){.about__wrapper{width:100%}}.about__list{width:100%;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;gap:40px}@media (max-width:725px){.about__list{-webkit-box-align:center;align-items:center}}.about__list_item{display:inline-flex;-webkit-box-align:center;align-items:center;gap:20px}@media (max-width:725px){.about__list_item{-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-pack:center;justify-content:center}}.about__list_item-circle{flex-shrink:0;display:flex;-webkit-box-pack:center;justify-content:center;-webkit-box-align:center;align-items:center;width:100px;height:100px;border-radius:50%;border:2px solid rgb(152,5,5);color:rgb(255,255,255);font-family:"Bebas Neue Book",sans-serif;font-weight:900;font-size:46px}.about__list_item-txt{width:100%;min-width:0px;max-width:600px;font-family:Montserrat,sans-serif;font-weight:500;color:rgb(255,255,255);font-size:24px;word-break:keep-all}@media (max-width:725px){.about__list_item-txt{text-align:center;max-width:300px}}@media (min-width:725px){.about__list_item:nth-child(2n){margin-left:100px}}.description{width:100%;height:auto;padding:40px 20px 60px;background-color:rgb(0,0,0);position:relative}.description::after{content:"";display:block;position:absolute;left:0px;top:0px;height:100%;width:20px;background-color:rgb(152,5,5)}.description p{margin-left:40px;font-family:Montserrat,sans-serif;font-weight:300;font-size:20px;color:rgb(255,255,255);overflow-wrap:break-word}.description p span{font-family:Montserrat,sans-serif;font-weight:400;font-size:26px;text-transform:uppercase}.subdescr{width:100%;height:auto;padding:40px 20px 100px}.subdescr__wrapper{width:100%;-webkit-box-align:center;align-items:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column}.subdescr__cards,.subdescr__wrapper{display:flex}.subdescr__cards{max-width:90%;width:1170px;flex-wrap:wrap;row-gap:50px}@media (min-width:722px) and (max-width:1054px){.subdescr__cards{-webkit-box-pack:center;justify-content:center}}.subdescr__card{width:auto;height:auto;min-height:170px;-webkit-box-flex:0;flex:0 1 auto;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;flex-direction:column;-webkit-box-pack:center;justify-content:center;padding:0px 50px;text-align:right}@media (max-width:1352px){.subdescr__card{width:100%;max-width:300px;border-left:2px solid red}}.subdescr__card_title{font-family:Montserrat,sans-serif;font-weight:600;font-size:22px;text-transform:uppercase;color:rgb(255,255,255)}@media (max-width:1054px){.subdescr__card_title{font-size:18px}}.subdescr__card_body{height:auto}.subdescr__card_body-pref{margin-right:15px;font-family:"Bebas Neue",sans-serif;font-weight:700;font-size:60px;color:rgb(255,255,255)}@media (max-width:1054px){.subdescr__card_body-pref{font-size:56px}}.subdescr__card_body-cont{font-family:"Bebas Neue",sans-serif;font-weight:700;font-size:120px;color:rgb(255,255,255);line-height:100px}@media (max-width:1054px){.subdescr__card_body-cont{font-size:116px}}.subdescr__card_body-val{font-family:Montserrat;font-style:italic;font-weight:600;font-size:18px;color:rgb(255,255,255)}.subdescr .border{border-left:2px solid red}.main__bg{width:100%;height:auto;background-image:url("images/global-bg-min.webp");background-repeat:no-repeat;background-position:50% center;background-size:cover;object-fit:contain}:root{--swiper-theme-color: #007aff}:host{position:relative;display:block;margin-left:auto;margin-right:auto;z-index:1}
+            @font-face {
+                font-family: "Bebas Neue";
+                src: local("Bebas Neue Bold"), local("BebasNeueBold"), url("fonts/BebasNeueBold.woff2") format("woff2"), url("fonts/BebasNeueBold.woff") format("woff"),
+                    url("fonts/BebasNeueBold.ttf") format("truetype");
+                font-weight: 700;
+                font-style: normal;
+                font-display: swap;
+            }
+            @font-face {
+                font-family: Montserrat;
+                src: local("Montserrat Medium"), local("Montserrat-Medium"), url("fonts/Montserrat-Medium.woff2") format("woff2"), url("fonts/Montserrat-Medium.woff") format("woff"),
+                    url("fonts/Montserrat-Medium.ttf") format("truetype");
+                font-weight: 500;
+                font-style: normal;
+                font-display: swap;
+            }
+            @font-face {
+                font-family: Montserrat;
+                src: local("Montserrat SemiBold Italic"), local("Montserrat-SemiBoldItalic"), url("fonts/Montserrat-SemiBoldItalic.woff2") format("woff2"),
+                    url("fonts/Montserrat-SemiBoldItalic.woff") format("woff"), url("fonts/Montserrat-SemiBoldItalic.ttf") format("truetype");
+                font-weight: 600;
+                font-style: italic;
+                font-display: swap;
+            }
+            @font-face {
+                font-family: Montserrat;
+                src: local("Montserrat Bold"), local("Montserrat-Bold"), url("fonts/Montserrat-Bold.woff2") format("woff2"), url("fonts/Montserrat-Bold.woff") format("woff"),
+                    url("fonts/Montserrat-Bold.ttf") format("truetype");
+                font-weight: 700;
+                font-style: normal;
+                font-display: swap;
+            }
+            @font-face {
+                font-family: "Bebas Neue";
+                src: local("Bebas Neue Regular"), local("BebasNeueRegular"), url("fonts/BebasNeueRegular.woff2") format("woff2"), url("fonts/BebasNeueRegular.woff") format("woff"),
+                    url("fonts/BebasNeueRegular.ttf") format("truetype");
+                font-weight: 400;
+                font-style: normal;
+                font-display: swap;
+            }
+            @font-face {
+                font-family: Montserrat;
+                src: local("Montserrat Black"), local("Montserrat-Black"), url("fonts/Montserrat-Black.woff2") format("woff2"), url("fonts/Montserrat-Black.woff") format("woff"),
+                    url("fonts/Montserrat-Black.ttf") format("truetype");
+                font-weight: 900;
+                font-style: normal;
+                font-display: swap;
+            }
+            @font-face {
+                font-family: Montserrat;
+                src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("fonts/Montserrat-SemiBold.woff2") format("woff2"), url("fonts/Montserrat-SemiBold.woff") format("woff"),
+                    url("fonts/Montserrat-SemiBold.ttf") format("truetype");
+                font-weight: 600;
+                font-style: normal;
+                font-display: swap;
+            }
+            @font-face {
+                font-family: "Bebas Neue";
+                src: local("Bebas Neue Bold"), local("BebasNeueBold"), url("fonts/BebasNeueBold.woff2") format("woff2"), url("fonts/BebasNeueBold.woff") format("woff"),
+                    url("fonts/BebasNeueBold.ttf") format("truetype");
+                font-weight: 700;
+                font-style: normal;
+                font-display: swap;
+            }
+            @font-face {
+                font-family: Montserrat;
+                src: local("Montserrat Medium"), local("Montserrat-Medium"), url("fonts/Montserrat-Medium.woff2") format("woff2"), url("fonts/Montserrat-Medium.woff") format("woff"),
+                    url("fonts/Montserrat-Medium.ttf") format("truetype");
+                font-weight: 500;
+                font-style: normal;
+                font-display: swap;
+            }
+            @font-face {
+                font-family: Montserrat;
+                src: local("Montserrat SemiBold Italic"), local("Montserrat-SemiBoldItalic"), url("fonts/Montserrat-SemiBoldItalic.woff2") format("woff2"),
+                    url("fonts/Montserrat-SemiBoldItalic.woff") format("woff"), url("fonts/Montserrat-SemiBoldItalic.ttf") format("truetype");
+                font-weight: 600;
+                font-style: italic;
+                font-display: swap;
+            }
+            @font-face {
+                font-family: Montserrat;
+                src: local("Montserrat Bold"), local("Montserrat-Bold"), url("fonts/Montserrat-Bold.woff2") format("woff2"), url("fonts/Montserrat-Bold.woff") format("woff"),
+                    url("fonts/Montserrat-Bold.ttf") format("truetype");
+                font-weight: 700;
+                font-style: normal;
+                font-display: swap;
+            }
+            @font-face {
+                font-family: "Bebas Neue";
+                src: local("Bebas Neue Regular"), local("BebasNeueRegular"), url("fonts/BebasNeueRegular.woff2") format("woff2"), url("fonts/BebasNeueRegular.woff") format("woff"),
+                    url("fonts/BebasNeueRegular.ttf") format("truetype");
+                font-weight: 400;
+                font-style: normal;
+                font-display: swap;
+            }
+            @font-face {
+                font-family: Montserrat;
+                src: local("Montserrat Black"), local("Montserrat-Black"), url("fonts/Montserrat-Black.woff2") format("woff2"), url("fonts/Montserrat-Black.woff") format("woff"),
+                    url("fonts/Montserrat-Black.ttf") format("truetype");
+                font-weight: 900;
+                font-style: normal;
+                font-display: swap;
+            }
+            @font-face {
+                font-family: Montserrat;
+                src: local("Montserrat SemiBold"), local("Montserrat-SemiBold"), url("fonts/Montserrat-SemiBold.woff2") format("woff2"), url("fonts/Montserrat-SemiBold.woff") format("woff"),
+                    url("fonts/Montserrat-SemiBold.ttf") format("truetype");
+                font-weight: 600;
+                font-style: normal;
+                font-display: swap;
+            }
+            * {
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+            a {
+                text-decoration: none;
+            }
+            ul {
+                list-style-type: none;
+            }
+            body,
+            html {
+                height: 100%;
+            }
+            :root {
+                --primary-50: #ff3e79;
+                --primary-100: #efcde9;
+                --primary-200: #e3a8d9;
+                --primary-300: #d782c8;
+                --primary-400: #ca5bb8;
+                --primary-500: #be35a7;
+                --primary-600: #982a86;
+                --primary-700: #722064;
+                --primary-800: #4c1543;
+                --primary-900: #260b21;
+            }
+            .header {
+                width: 100%;
+                height: 60px;
+                position: absolute;
+                top: 0px;
+                padding: 0px 20px;
+                z-index: 100;
+            }
+            .header__wrapper {
+                display: flex;
+                -webkit-box-pack: end;
+                justify-content: end;
+            }
+            .logo {
+                display: block;
+                position: absolute;
+                top: 30px;
+                left: 30px;
+            }
+            .logo img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            @media (max-width: 1200px) {
+                .logo {
+                    width: 150px;
+                }
+            }
+            @media (max-width: 550px) {
+                .logo {
+                    width: 100px;
+                }
+            }
+            .burger {
+                display: none;
+                width: 36px;
+                height: 23px;
+                margin-top: 30px;
+                position: relative;
+                z-index: 10001;
+            }
+            .burger span {
+                width: 100%;
+                height: 2px;
+                background-color: rgb(255, 255, 255);
+            }
+            @media (max-width: 830px) {
+                .burger {
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    flex-direction: column;
+                    -webkit-box-pack: justify;
+                    justify-content: space-between;
+                }
+            }
+            .nav {
+                margin-top: 30px;
+            }
+            @media (max-width: 830px) {
+                .nav {
+                    transform: translate(-100%);
+                    width: 100%;
+                    height: max-content;
+                    position: fixed;
+                    left: 0px;
+                    top: 0px;
+                    margin-top: 0px;
+                    background-color: rgb(66, 9, 9);
+                }
+            }
+            .nav__menu {
+                display: flex;
+            }
+            .nav__menu {
+                gap: 200px;
+            }
+            .nav__menu_item {
+                width: max-content;
+                background: linear-gradient(90deg, rgb(255, 255, 255) 50%, red 0px) 0% 0% / 200% 100%;
+                color: transparent;
+                position: relative;
+                z-index: 20;
+            }
+            .nav__menu_item {
+                background-clip: text;
+            }
+            .nav__menu_link {
+                display: block;
+                width: max-content;
+                font-family: Montserrat, sans-serif;
+                font-size: 20px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: transparent;
+            }
+            @media (max-width: 1200px) {
+                .nav__menu_link {
+                    font-size: 16px;
+                }
+            }
+            @media (max-width: 1450px) {
+                .nav__menu {
+                    gap: 100px;
+                }
+            }
+            @media (max-width: 1200px) {
+                .nav__menu {
+                    gap: 50px;
+                }
+            }
+            @media (max-width: 830px) {
+                .nav__menu {
+                    width: 100%;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    flex-direction: column;
+                    -webkit-box-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    padding-bottom: 20px;
+                    padding-top: 20px;
+                }
+            }
+            /* .main {
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                background-image: url("images/banner-bg-1.webp");
+                background-repeat: no-repeat;
+                background-position: 50% center;
+                background-size: cover;
+            }
+            @media (max-width: 830px) {
+                .main {
+                    height: 589px;
+                }
+            }
+            .main__content {
+                position: absolute;
+                bottom: 40px;
+                left: 20px;
+            }
+            .main__content h1 {
+                font-family: "Bebas Neue", sans-serif;
+                color: rgb(255, 255, 255);
+                font-size: 75px;
+                font-weight: 700;
+                text-transform: uppercase;
+                padding-bottom: 40px;
+            }
+            @media (max-width: 1200px) {
+                .main__content h1 {
+                    font-size: 60px;
+                    padding-bottom: 30px;
+                }
+            }
+            @media (max-width: 750px) {
+                .main__content h1 {
+                    font-size: 40px;
+                    padding-bottom: 10px;
+                }
+            }
+            .main__content_btn {
+                display: flex;
+                -webkit-box-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                align-items: center;
+                background-color: rgb(152, 5, 5);
+                border: none;
+                border-radius: 50px;
+                width: 350px;
+                height: 50px;
+                color: rgb(255, 255, 255);
+                font-size: 20px;
+                font-weight: 600;
+                font-family: Montserrat, sans-serif;
+                text-transform: uppercase;
+            }
+            @media (max-width: 520px) {
+                .main__content_btn {
+                    font-size: 16px;
+                    width: 250px;
+                }
+            } */
+            :root {
+                --swiper-theme-color: #007aff;
+            }
+            :host {
+                position: relative;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                z-index: 1;
+            }
+            * {
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+            a {
+                text-decoration: none;
+            }
+            ul {
+                list-style-type: none;
+            }
+            body,
+            html {
+                height: 100%;
+            }
+            .header {
+                width: 100%;
+                height: 60px;
+                position: absolute;
+                top: 0px;
+                padding: 0px 20px;
+                z-index: 100;
+            }
+            .header__wrapper {
+                display: flex;
+                -webkit-box-pack: end;
+                justify-content: end;
+            }
+            .logo {
+                display: block;
+                position: absolute;
+                top: 30px;
+                left: 30px;
+            }
+            .logo img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            @media (max-width: 1200px) {
+                .logo {
+                    width: 150px;
+                }
+            }
+            @media (max-width: 550px) {
+                .logo {
+                    width: 100px;
+                }
+            }
+            .burger {
+                display: none;
+                width: 36px;
+                height: 23px;
+                margin-top: 30px;
+                position: relative;
+                z-index: 10001;
+            }
+            .burger span {
+                width: 100%;
+                height: 2px;
+                background-color: rgb(255, 255, 255);
+            }
+            @media (max-width: 830px) {
+                .burger {
+                    display: flex;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    flex-direction: column;
+                    -webkit-box-pack: justify;
+                    justify-content: space-between;
+                }
+            }
+            .nav {
+                margin-top: 30px;
+            }
+            @media (max-width: 830px) {
+                .nav {
+                    transform: translate(-100%);
+                    width: 100%;
+                    height: max-content;
+                    position: fixed;
+                    left: 0px;
+                    top: 0px;
+                    margin-top: 0px;
+                    background-color: rgb(66, 9, 9);
+                }
+            }
+            .nav__menu {
+                display: flex;
+            }
+            .nav__menu {
+                gap: 200px;
+            }
+            .nav__menu_item {
+                width: max-content;
+                background: linear-gradient(90deg, rgb(255, 255, 255) 50%, red 0px) 0% 0% / 200% 100%;
+                color: transparent;
+                position: relative;
+                z-index: 20;
+            }
+            .nav__menu_item {
+                background-clip: text;
+            }
+            .nav__menu_link {
+                display: block;
+                width: max-content;
+                font-family: Montserrat, sans-serif;
+                font-size: 20px;
+                font-weight: 600;
+                text-transform: uppercase;
+                color: transparent;
+            }
+            @media (max-width: 1200px) {
+                .nav__menu_link {
+                    font-size: 16px;
+                }
+            }
+            @media (max-width: 1450px) {
+                .nav__menu {
+                    gap: 100px;
+                }
+            }
+            @media (max-width: 1200px) {
+                .nav__menu {
+                    gap: 50px;
+                }
+            }
+            @media (max-width: 830px) {
+                .nav__menu {
+                    width: 100%;
+                    -webkit-box-orient: vertical;
+                    -webkit-box-direction: normal;
+                    flex-direction: column;
+                    -webkit-box-pack: center;
+                    justify-content: center;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    padding-bottom: 20px;
+                    padding-top: 20px;
+                }
+            }
+            .main {
+                position: relative;
+                width: 100%;
+                height: 950px;
+                height: 100vh;
+                background-image: url("images/banner-bg-1.webp");
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                object-fit: contain;
+            }
+            @media (max-width: 830px) {
+                .main {
+                    height: 589px;
+                }
+            }
+            .main__content {
+                position: absolute;
+                bottom: 40px;
+                left: 20px;
+            }
+            .main__content h1 {
+                font-family: "Bebas Neue", sans-serif;
+                color: rgb(255, 255, 255);
+                font-size: 75px;
+                font-weight: 700;
+                text-transform: uppercase;
+                padding-bottom: 40px;
+            }
+            @media (max-width: 1200px) {
+                .main__content h1 {
+                    font-size: 60px;
+                    padding-bottom: 30px;
+                }
+            }
+            @media (max-width: 750px) {
+                .main__content h1 {
+                    font-size: 40px;
+                    padding-bottom: 10px;
+                }
+            }
+            .main__content_btn {
+                display: flex;
+                -webkit-box-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                align-items: center;
+                background-color: rgb(152, 5, 5);
+                border: none;
+                border-radius: 50px;
+                width: 350px;
+                height: 50px;
+                color: rgb(255, 255, 255);
+                font-size: 20px;
+                font-weight: 600;
+                font-family: Montserrat, sans-serif;
+                text-transform: uppercase;
+            }
+            @media (max-width: 520px) {
+                .main__content_btn {
+                    font-size: 16px;
+                    width: 250px;
+                }
+            }
+            .about {
+                width: 100%;
+                height: 900px;
+                padding: 40px 20px 60px 20px;
+                background-image: url("images/main-bg.webp");
+                background-repeat: no-repeat;
+                background-position: center -150px;
+                background-size: cover;
+                background-color: black;
+                -webkit-box-shadow: inset 60px 1px 47px 28px rgba(0, 0, 0, 1);
+                -moz-box-shadow: inset 60px 1px 47px 28px rgba(0, 0, 0, 1);
+                box-shadow: inset 60px 1px 47px 28px rgba(0, 0, 0, 1);
+            }
+            .about__title {
+                font-family: "Bebas Neue Book" ,sans-serif;
+                font-weight: 700;
+                font-size: 42px;
+                color: white;
+                text-transform: uppercase;
+                margin-bottom: 60px;
+            }
+            @media (max-width: 725px) {
+                .about__wrapper {
+                    width: 100%;
+                }
+            }
+            @media (max-width: 768px) {
+                .about {
+                    height: 1650px;
+                }
+            }
+            .about__list {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+            }
+            @media (max-width: 725px) {
+                .about__list {
+                    align-items: center;
+                }
+            }
+            .about__list_item {
+                display: inline-flex;
+                align-items: center;
+                gap: 20px;
+            }
+            @media (max-width: 725px) {
+                .about__list_item {
+                    flex-direction: column;
+                    justify-content: center;
+                }
+            }
+            .about__list_item:nth-child(2n) {
+                margin-left: 0;
+            }
+            @media (min-width: 725px) {
+                .about__list_item:nth-child(2n) {
+                    margin-left: 100px;
+                }
+            }
+            .about__list_item-circle {
+                flex-shrink: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 2px solid #980505;
+                color: white;
+                font-family: "Bebas Neue Book", sans-serif;
+                font-weight: 900;
+                font-size: 46px;
+            }
+            .about__list_item-txt {
+                width: 100%;
+                min-width: 0;
+                max-width: 600px;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 500;
+                color: white;
+                font-size: 24px;
+                word-break: keep-all;
+                word-wrap: break-word;
+            }
+            .about__list_item-txt span {
+                font-weight: 700;
+            }
+            @media (max-width: 725px) {
+                .about__list_item-txt {
+                    text-align: center;
+                    max-width: 300px;
+                }
+            }
+            :root {
+                --swiper-theme-color: #007aff;
+            }
+            :host {
+                position: relative;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                z-index: 1;
+            }
         </style>
     </head>
     <body>
         <div class="wrapper">
             <header class="header">
-                <a href="#" class="logo" role="img" aria-label="Мясной Жарим по любви">
+                <a href="#" class="logo" role="img">
                     <img src="images/logo.png" alt="logo" />
                 </a>
                 <div class="header__wrapper">
@@ -33,7 +681,7 @@
                 </div>
             </header>
             <main>
-                <div class="main">
+                <div class="main" style="background-color: black">
                     <div class="main__content">
                         <h1>открой свой успешный ресторан <br />и жарь по любви</h1>
                         <a href="#" class="main__content_btn">узнать об инвестициях</a>
@@ -70,7 +718,7 @@
                     <div class="description__wrapper">
                         <p>
                             <span> Мясной STEAK HOUSE</span> — это ресторан, который приглашает вас погрузиться в мир стейков высочайшего качества.Центром внимания здесь является уникальный авторский
-                            криль,спроектированный еваропейскими мастерами специально для нашего ресторана. Этот гриль позволяет создавать фирменные блюда,которые очаровывают гостей насыщенным вкусом
+                            криль,спроектированный еваропейскими мастерами специально для нашего ресторана. Этот гриль позволяет создавать фирменные блюда,которые очаровывают гостей насыщенным вкусом<br>
                             и неповторимым ароматом
                         </p>
                     </div>
@@ -139,14 +787,26 @@
                         <div class="swiper-wrapper">
                             <!-- Slides -->
                             <div class="swiper-slide">
-                                <img src="images/swiper-i.png" alt="" />
+                                <img src="images/swiper-i.webp" alt="alt" loading="lazy" />
                                 <div class="swiper-slide_content">
                                     <p class="swiper-slide_content-txt">авторская кухня</p>
                                     <button class="swiper-slide_content-btn">оставить заявку</button>
                                 </div>
                             </div>
-                            <div class="swiper-slide">Slide 2</div>
-                            <div class="swiper-slide">Slide 3</div>
+                            <div class="swiper-slide">
+                                <img src="images/swiper-i.webp" alt="alt" loading="lazy" />
+                                <div class="swiper-slide_content">
+                                    <p class="swiper-slide_content-txt">авторская кухня</p>
+                                    <button class="swiper-slide_content-btn">оставить заявку</button>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/swiper-i.webp" alt="alt" loading="lazy" />
+                                <div class="swiper-slide_content">
+                                    <p class="swiper-slide_content-txt">авторская кухня</p>
+                                    <button class="swiper-slide_content-btn">оставить заявку</button>
+                                </div>
+                            </div>
                             ...
                         </div>
                         <!-- If we need pagination -->
@@ -181,37 +841,37 @@
                                 <ul class="franchise__cards">
                                     <li class="franchise__card">
                                         <div class="franchise__card-img">
-                                            <img src="icons/includes-znak.png" alt="" />
+                                            <img src="icons/includes-znak.png" alt="alt" loading="lazy" />
                                         </div>
                                         <p class="franchise__card-txt">товарный знак</p>
                                     </li>
                                     <li class="franchise__card">
                                         <div class="franchise__card-img">
-                                            <img src="icons/includes-znak.png" alt="" />
+                                            <img src="icons/includes2.png" alt="alt" loading="lazy" />
                                         </div>
                                         <p class="franchise__card-txt">бизнес модель</p>
                                     </li>
                                     <li class="franchise__card">
                                         <div class="franchise__card-img">
-                                            <img src="icons/includes-znak.png" alt="" />
+                                            <img src="icons/includes3.png" alt="alt" loading="lazy" />
                                         </div>
                                         <p class="franchise__card-txt">брендбук</p>
                                     </li>
                                     <li class="franchise__card">
                                         <div class="franchise__card-img">
-                                            <img src="icons/includes-znak.png" alt="" />
+                                            <img src="icons/includes4.png" alt="alt" loading="lazy" />
                                         </div>
                                         <p class="franchise__card-txt">маркетинговая стратегия</p>
                                     </li>
                                     <li class="franchise__card">
                                         <div class="franchise__card-img">
-                                            <img src="icons/includes-znak.png" alt="" />
+                                            <img src="icons/includes5.png" alt="alt" loading="lazy" />
                                         </div>
                                         <p class="franchise__card-txt">меню</p>
                                     </li>
                                     <li class="franchise__card">
                                         <div class="franchise__card-img">
-                                            <img src="icons/includes-znak.png" alt="" />
+                                            <img src="icons/includes6.png" alt="alt" loading="lazy" />
                                         </div>
                                         <p class="franchise__card-txt">обучение персонала зала и кухни</p>
                                     </li>
@@ -270,10 +930,10 @@
                                     <div class="decor"></div>
                                     <p>г.Ташкент, ул.шота руставели,13 а</p>
                                 </div>
-                                <div class="projects__item_img"><img src="images/proect1.png" alt="" /></div>
+                                <div class="projects__item_img"><img src="images/projec1.webp" alt="alt" loading="lazy" /></div>
                             </div>
                             <div class="projects__item">
-                                <div class="projects__item_img"><img src="images/proect2.png" alt="" /></div>
+                                <div class="projects__item_img"><img src="images/project2.webp" alt="alt" loading="lazy" /></div>
                                 <div class="projects__item_txt">
                                     <div class="decor"></div>
                                     <p>г.Ташкент, Ташкент сити , ул. Укчи 7</p>
@@ -289,29 +949,29 @@
                                 <form action="#" class="form">
                                     <input class="form__input-name" name="name" placeholder="введите имя" id="name" type="text" />
                                     <input class="form__input-name" name="phone" placeholder="номер телефона" id="phone" type="text" />
-                                    <textarea class="form__input-textare" name="textarea" placeholder="введите вопрос"  id="textarea"></textarea>
+                                    <textarea class="form__input-textare" name="textarea" placeholder="введите вопрос" id="textarea"></textarea>
                                 </form>
                                 <button id="form" type="submit">отправить вопрос</button>
                             </div>
                             <div class="contacts__info">
                                 <p class="contacts__info__title">
-                                    Если вaм близка нaша концепция, вы имеете достa- точный опыт управления и гтовы соблюдать наши регламенты - присоединяйтесь к большой семье партнёров по бизневу
+                                    Если вaм близка нaша концепция, вы имеете достa- точный опыт управления <br>и гтовы соблюдать наши регламенты - присоединяйтесь к большой семье партнёров по бизневу
                                 </p>
                                 <div class="contacts__info__franchise">
                                     <p class="contacts__info__franchise-txt">Отдел франчайзинга</p>
                                     <div>
-                                        <img src="icons/phone.png" alt="phone" />
+                                        <img src="icons/phone.png" alt="phone" loading="lazy" />
                                         <a href="tel:+998903259336 ">+998 90 325 93 36 </a>
                                     </div>
                                 </div>
                                 <div class="contacts__info_mailto">
-                                    <img src="icons/email.png" alt="" />
+                                    <img src="icons/email.png" alt="email" loading="lazy" />
                                     <a href="mailto:"> franchise@ab-group.rest </a>
                                 </div>
 
                                 <p class="contacts__info_abgroup-txt">ресторанный холдинг AB Group</p>
                                 <div class="contacts__info_abgroup">
-                                    <img src="icons/phone.png" alt="phone" />
+                                    <img src="icons/phone.png" alt="phone" loading="lazy" />
                                     <a href="tel:+998772521551 ">+998 77 252 15 51 </a>
                                 </div>
                             </div>
@@ -326,8 +986,8 @@
                         <li class="footer__menu_item"><a href="#" class="footer__menu_link">финансы</a></li>
                     </ul>
                     <div class="footer__logo">
-                        <a href="#"  role="img" aria-label="Мясной Жарим по любви">
-                            <img src="images/logo.png" alt="logo" />
+                        <a href="#" role="img" aria-label="Мясной Жарим по любви">
+                            <img src="images/logo.png" alt="logo" loading="lazy" />
                         </a>
                     </div>
                     <ul class="footer__menu">
