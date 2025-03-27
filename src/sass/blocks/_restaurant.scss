@@ -19,7 +19,7 @@
         letter-spacing: normal;
         padding-left: 244px;
         @media (max-width: 1655px) {
-            padding-left: 200px;
+            padding-left: 149px;
         }
         @media (max-width: 375px) {
             font-size: 32px;
@@ -164,9 +164,9 @@
             border-radius: 20px;
             &:after {
                 display: block !important;
-                width: 64px;
-                top: 229px;
-                left: 41%;
+                width: 61px;
+                top: 228px;
+                left: 42%;
                 transform: rotate(90deg);
             }
         }
