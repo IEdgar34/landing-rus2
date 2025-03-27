@@ -11,18 +11,30 @@
     &__title {
         margin-bottom: 40px;
         font-family: "Bebas Neue Book" sans-serif;
-        font-size: 42px;
+        font-size: 52px;
         font-weight: 700;
         color: white;
         text-transform: uppercase;
         line-height: normal;
         letter-spacing: normal;
-        padding-left: 170px;
+        padding-left: 244px;
+        @media (max-width: 1655px) {
+            padding-left: 200px;
+        }
         @media (max-width: 375px) {
             font-size: 32px;
         }
+        @media (max-width: 875px) {
+            padding-left: 158px;
+        }
         @media (max-width: 770px) {
-          padding-left: 0;
+            padding-left: 0;
+        }
+        @media (max-width: 600px) {
+            font-size: 42px;
+        }
+        @media (max-width: 481px) {
+            max-width: 290px;
         }
     }
 
@@ -49,13 +61,13 @@
         align-items: center;
         gap: 20px;
         position: relative;
+
         @media (max-width: 1735px) {
             width: 300px;
         }
         @media (max-width: 1455px) {
             width: 280px;
         }
-        
 
         &:after {
             content: "";
@@ -68,7 +80,6 @@
             top: 30px;
             @media (max-width: 1736px) {
                 width: 280px;
-                
             }
         }
         &:nth-child(4) {
@@ -95,7 +106,7 @@
             }
         } */
 
-         @media (max-width: 1274px) {
+        @media (max-width: 1274px) {
             &:nth-child(3) {
                 &:after {
                     display: none;
@@ -170,7 +181,7 @@
             height: 70px;
             border-radius: 50%;
             background-color: #d60000;
-          /*   display: flex;
+            /*   display: flex;
             justify-content: center;
             align-items: center; */
 
@@ -179,12 +190,11 @@
             font-weight: 600;
             line-height: normal;
             color: white;
-            p{
+            p {
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-
             }
         }
         &_txt {
@@ -194,8 +204,10 @@
             line-height: normal;
             font-size: 20px;
             color: white;
+            margin-left: 138px;
             @media (max-width: 875px) {
                 text-align: center;
+                margin-left: 0;
             }
         }
     }

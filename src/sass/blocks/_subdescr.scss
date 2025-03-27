@@ -9,18 +9,29 @@
         flex-direction: column;
     }
     &__cards {
-        max-width: 90%;
-        width: 1170px;
+        width: 90%;
+        margin-bottom: 40px;
+        /*  grid-auto-flow: column; */
+        justify-content: center;
+        /*  width: 1170px; */
         display: flex;
         flex-wrap: wrap;
         row-gap: 50px;
-        @media (min-width: 722px) and (max-width: 1054px) {
-            justify-content: center;
+        /* column-gap: 40px; */
+        /* justify-content: space-between; */
+        @media(max-width: 1277px){
+            justify-content: start;
         }
+       /*  @media (min-width: 722px) and (max-width: 1054px) {
+            justify-content: center;
+        } */
     }
     &__card {
         /*  */
-        width: auto;
+        /* width: auto; */
+        /* width: 33.3%; */
+        width: max-content;
+        /*   width: 700px; */
         height: auto;
         min-height: 170px;
         flex: 0 1 auto;
@@ -34,15 +45,20 @@
             max-width: 300px;
             border-left: 2px solid red;
         }
-        
     }
     &__card_title {
         margin-bottom: 10px;
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
-        font-size: 22px;
+        font-size: 30px;
         text-transform: uppercase;
         color: white;
+        @media (max-width: 1626px) {
+            font-size: 25px;
+        }
+        @media (max-width: 1452px) {
+            font-size: 20px;
+        }
         @media (max-width: 1054px) {
             font-size: 18px;
         }
@@ -53,8 +69,14 @@
             margin-right: 15px;
             font-family: "Bebas Neue", sans-serif;
             font-weight: 700;
-            font-size: 60px;
+            font-size: 70px;
             color: white;
+            @media (max-width: 1620px) {
+                font-size: 56px;
+            }
+            @media (max-width: 1452px) {
+                font-size: 46px;
+            }
             @media (max-width: 1054px) {
                 font-size: 56px;
             }
@@ -62,9 +84,15 @@
         &-cont {
             font-family: "Bebas Neue", sans-serif;
             font-weight: 700;
-            font-size: 120px;
+            font-size: 130px;
             color: white;
             line-height: 100px;
+            @media (max-width: 1620px) {
+                font-size: 110px;
+            }
+            @media (max-width: 1452px) {
+                font-size: 90px;
+            }
             @media (max-width: 1054px) {
                 font-size: 116px;
             }

@@ -18,7 +18,7 @@
     }
     &__menu {
         display: flex;
-        gap: 200px;
+       /*  gap: 200px; */
 
         &_item {
             width: max-content;
@@ -47,12 +47,12 @@
                 font-size: 16px;
             }
         }
-        @media (max-width: 1450px) {
+      /*   @media (max-width: 1450px) {
             gap: 100px;
         }
         @media (max-width: 1200px) {
             gap: 50px;
-        }
+        } */
         @media (max-width: 830px) {
             width: 100%;
             flex-direction: column;

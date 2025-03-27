@@ -11,12 +11,12 @@
     &__title {
         font-family: "Bebas Neue Book", sans-serif;
         font-weight: 900;
-        font-size: 90px;
+        font-size: 120px;
         color: white;
         text-transform: uppercase;
         line-height: normal;
-        @media (max-width: 1000px) {
-            font-size: 70px;
+        @media (max-width: 1350px) {
+            font-size: 90px;
         }
         @media (max-width: 768px) {
             font-size: 50px;
@@ -42,11 +42,11 @@
         &__title {
             width: 100%;
             font-family: "Montserrat", sans-serif;
-            font-weight: 400;
+            font-weight: 300;
             color: white;
-            font-size: 21px;
+            font-size: 26px;
             line-height: normal;
-            @media (max-width: 980px) {
+            @media (max-width: 1350px) {
                 font-size: 16px;
             }
         }
@@ -60,10 +60,10 @@
             margin-bottom: 60px;
             font-family: "Montserrat", sans-serif;
             font-weight: 400;
-            font-size: 18px;
+            font-size: 26px;
             color: white;
-            line-height: normal;
-            @media (max-width: 980px) {
+            line-height: 29px;
+            @media (max-width: 1350px) {
                 font-size: 16px;
             }
         }
@@ -81,10 +81,13 @@
                 a {
                     font-family: "Montserrat", sans-serif;
                     font-weight: 600;
-                    font-size: 28px;
+                    font-size: 36px;
                     color: white;
                     line-height: normal;
-                    @media(max-width: 480px){
+                    @media(max-width: 1350px){
+                        font-size: 28px;
+                    }
+                    @media(max-width: 450px){
                         font-size: 18px;
                     }
                 }
@@ -110,10 +113,13 @@
             a {
                 font-family: "Montserrat", sans-serif;
                 font-weight: 600;
-                font-size: 28px;
+                font-size: 36px;
                 color: rgb(168, 166, 166);
                 line-height: normal;
-                @media(max-width: 480px){
+                @media(max-width: 1350px){
+                    font-size: 28px;
+                }
+                @media(max-width: 450px){
                     font-size: 18px;
                 }
             }
@@ -132,10 +138,13 @@
             a {
                 font-family: "Montserrat", sans-serif;
                 font-weight: 600;
-                font-size: 28px;
+                font-size: 36px;
                 color: white;
                 line-height: normal;
-                @media(max-width: 480px){
+                @media(max-width: 1350px){
+                    font-size: 28px;
+                }
+                @media(max-width: 450px){
                     font-size: 18px;
                 }
             }
