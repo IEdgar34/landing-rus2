@@ -41,14 +41,16 @@
             line-height: normal;
             text-transform: uppercase;
             color: #d40000;
+            @media (max-width: 1275px) {
+                font-size: 16px;
+            }
         }
-       
     }
-    &__link_wrapper{
+    &__link_wrapper {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        @media(max-width: 1000px){
+        @media (max-width: 1000px) {
             flex-direction: column;
             align-items: center;
         }
@@ -81,10 +83,10 @@
 
     .right {
         justify-content: flex-end;
-        @media (max-width: 1870px){
+        @media (max-width: 1870px) {
             gap: 70px;
         }
-        @media (max-width: 1495px){
+        @media (max-width: 1495px) {
             gap: 30px;
         }
     }

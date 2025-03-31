@@ -26,7 +26,7 @@
                 @media (max-width: 1916px) {
                     font-size: 37px;
                 }
-                @media(max-width: 1620px){
+                @media (max-width: 1620px) {
                     font-size: 30px;
                 }
                 @media (max-width: 1452px) {
@@ -39,7 +39,7 @@
                 @media (max-width: 1916px) {
                     font-size: 80px;
                 }
-                @media(max-width: 1620px){
+                @media (max-width: 1620px) {
                     font-size: 70px;
                 }
                 @media (max-width: 1452px) {
@@ -47,8 +47,8 @@
                 }
             }
             .subdescr__card_body-cont {
-                font-size: 190px;
-               /*  @media (max-width: 1916px) {
+                font-size: 220px;
+                /*  @media (max-width: 1916px) {
                     font-size: 160px;
                 }
                 @media(max-width: 1620px){
@@ -57,9 +57,15 @@
                 @media (max-width: 1452px) {
                     font-size: 150px;
                 } */
-                @media (max-width: 1352px) {
-                    font-size: 170px;
-                } 
+                @media (max-width: 1654px) {
+                    font-size: 200px;
+                }
+                @media (max-width: 1628px) {
+                    font-size: 180px;
+                }
+                @media (max-width: 1054px) {
+                    font-size: 160px;
+                }
             }
         }
     }
@@ -80,7 +86,7 @@
         }
     }
     &__card_title {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
         font-family: "Montserrat", sans-serif;
         font-weight: 600;
         font-size: 30px;
@@ -90,7 +96,7 @@
             font-size: 29px;
         }
         @media (max-width: 1620px) {
-            font-size: 23px;
+            font-size: 24px;
         }
         @media (max-width: 1452px) {
             font-size: 20px;
@@ -120,18 +126,24 @@
         &-cont {
             font-family: "Bebas Neue", sans-serif;
             font-weight: 700;
-            font-size: 150px;
+            font-size: 200px;
             color: white;
             line-height: 130px;
             /* @media (max-width: 1916px) {
                 font-size: 140px;
             } */
-           /*  @media (max-width: 1452px) {
+            /*  @media (max-width: 1452px) {
                 font-size: 90px;
             } */
-            @media (max-width: 1352px) {
+            @media (max-width: 1654px) {
+                font-size: 180px;
+            }
+            @media (max-width: 1628px) {
+                font-size: 160px;
+            }
+            /* @media (max-width: 1352px) {
                 font-size: 130px;
-            } 
+            } */
             @media (max-width: 1054px) {
                 font-size: 116px;
             }
