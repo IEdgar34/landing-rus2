@@ -24,6 +24,7 @@
         background-color: #980505;
     }
     p {
+        max-width: 1500px;
         margin-left: 40px;
         font-family: "Montserrat", sans-serif;
         font-weight: 300;
@@ -31,6 +32,7 @@
         color: white;
         line-height: 49px;
         word-wrap: break-word;
+        text-align: justify;
         @media (max-width: 1300px) {
             font-size: 26px;
         }
