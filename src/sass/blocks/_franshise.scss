@@ -19,7 +19,7 @@
         height: 2px;
         background-color: #d60000;
         position: absolute;
-        top: 227px;
+        top: 240px;
         @media (max-width: 1400px) {
             display: none;
         }
@@ -30,14 +30,14 @@
         height: 2px;
         background-color: #d60000;
         position: absolute;
-        top: 435px;
+        top: 463px;
         @media (max-width: 1400px) {
             display: none;
         }
     }
     &__title {
         margin-bottom: 40px;
-        font-family: "Bebas Neue Book" sans-serif;
+        font-family: "Bebas Neue", sans-serif;
         font-size: 52px;
         font-weight: 700;
         color: white;
@@ -102,8 +102,8 @@
         align-items: center;
         gap: 40px;
         &-img {
-            width: 70px;
-            height: 70px;
+            width: 80px;
+            height: 80px;
             img {
                 display: block;
                 width: 100%;

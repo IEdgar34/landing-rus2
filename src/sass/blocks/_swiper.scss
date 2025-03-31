@@ -26,8 +26,8 @@
         text-align: right;
         &-txt {
             margin-bottom: 10px;
-            font-family: "Bebas Neue Book" sans-serif;
-            font-weight: 700;
+            font-family: "Bebas Neue", sans-serif;
+            font-weight: 900;
             font-size: 28px;
             line-height: normal;
             color: white;
@@ -37,12 +37,16 @@
             }
         }
         &-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 220px;
             height: 50px;
             border: none;
             border-radius: 36px;
             padding: 0 10px;
             background: #980505;
+            font-family: "Montserrat",sans-serif;
             font-weight: 500;
             font-size: 18px;
             color: white;
