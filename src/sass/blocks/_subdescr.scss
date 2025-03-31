@@ -158,6 +158,10 @@
     }
     .mx-w-smol {
         max-width: 200px;
+        @media(max-width: 630px){
+            width: 100%;
+            max-width: 300px;
+        }
     }
     .tac {
         text-align: left;
