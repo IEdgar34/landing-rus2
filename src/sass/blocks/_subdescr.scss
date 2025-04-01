@@ -20,6 +20,15 @@
         }
 
         &:nth-child(1) {
+            .subdescr__card_body {
+                @media (max-width: 1352px) {
+                    display: flex;
+                    align-items: end;
+                }
+                @media (max-width: 721px) {
+                    justify-content: end;
+                }
+            }
             .subdescr__card_title {
                 margin-bottom: 30px;
                 font-size: 37px;
@@ -31,6 +40,9 @@
                 }
                 @media (max-width: 1452px) {
                     font-size: 25px;
+                }
+                @media (max-width: 375px) {
+                    font-size: 20px;
                 }
             }
 
@@ -63,8 +75,11 @@
                 @media (max-width: 1628px) {
                     font-size: 180px;
                 }
-                @media (max-width: 1054px) {
-                    font-size: 160px;
+                @media (max-width: 1352px) {
+                    font-size: 156px;
+                }
+                @media (max-width: 375px) {
+                    font-size: 126px;
                 }
             }
         }
@@ -84,6 +99,12 @@
             max-width: 300px;
             border-left: 2px solid red;
         }
+        @media (max-width: 721px) {
+            max-width: 100%;
+        }
+        @media (max-width: 375px) {
+            padding: 0 20px;
+        }
     }
     &__card_title {
         margin-bottom: 20px;
@@ -98,12 +119,15 @@
         @media (max-width: 1620px) {
             font-size: 24px;
         }
-        @media (max-width: 1452px) {
+        @media (max-width: 375px) {
+            font-size: 20px;
+        }
+        /* @media (max-width: 1452px) {
             font-size: 20px;
         }
         @media (max-width: 1054px) {
             font-size: 18px;
-        }
+        } */
     }
     &__card_body {
         height: auto;
@@ -147,6 +171,9 @@
             @media (max-width: 1054px) {
                 font-size: 116px;
             }
+            @media (max-width: 375px) {
+                font-size: 100px;
+            }
         }
         &-val {
             font-family: "Montserrat";
@@ -154,18 +181,42 @@
             font-weight: 600;
             font-size: 25px;
             color: white;
+            line-height: normal;
+        }
+    }
+    .df {
+        display: flex;
+        align-items: end;
+        /* justify-content: end; */
+        gap: 10px;
+        .subdescr__card_body-cont {
+            @media (max-width: 1620px) {
+                line-height: 111px;
+            }
+            @media (max-width: 1053px) {
+                line-height: 80px;
+            }
+            
+        }
+        @media (max-width: 721px) {
+            justify-content: end;
         }
     }
     .mx-w-smol {
         max-width: 200px;
-        @media(max-width: 630px){
+        @media (max-width: 721px) {
+            /*  width: 100%; */
+            max-width: 100%;
+            /* border-left: 2px solid red; */
+        }
+        /*  @media (max-width: 630px) {
             width: 100%;
             max-width: 300px;
-        }
+        } */
     }
     .tac {
         text-align: left;
-        @media (max-width: 1054px) {
+        @media (max-width: 1352px) {
             text-align: right;
         }
     }
