@@ -1,6 +1,6 @@
 <?php
 $title = "Сообщение с сайта behappy";
-$admin = "edo.jan.94@bk.ru";
+$admin = "franchise@ab-group.rest";
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $textarea = $_POST['textarea'];
