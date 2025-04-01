@@ -1,5 +1,5 @@
 <?php
-$title = "Сообщение с сайта behappy";
+$title = "Сообщение с сайта Мясной";
 $admin = "franchise@ab-group.rest";
 $name = $_POST['name'];
 $phone = $_POST['phone'];
