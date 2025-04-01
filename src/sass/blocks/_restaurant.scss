@@ -120,6 +120,8 @@
         }
         @media (max-width: 875px) {
             gap: 10px;
+            min-height: 200px;
+            padding: 10px;
         }
         /* @media (max-width: 994px) {
             width: 268px;
@@ -252,6 +254,7 @@
         }
         @media (max-width: 875px) {
             width: 391px;
+            min-height: 200px;
             border: 1px solid red;
             padding: 5px;
             border-radius: 20px;
@@ -260,6 +263,7 @@
                 width: 61px;
                 top: 228px;
                 left: 42%;
+                bottom: 0;
                 transform: rotate(90deg);
             }
         }
